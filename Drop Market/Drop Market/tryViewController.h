@@ -7,7 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "tryTableViewController.h"
 
-@interface tryViewController : UIViewController
+@interface tryViewController : UIViewController<tryTableViewControllerDelegate>
+
+@property NSDictionary *mainProductsDictionary;
 
 @end

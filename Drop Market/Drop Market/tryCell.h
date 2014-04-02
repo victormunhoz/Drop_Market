@@ -12,8 +12,8 @@
 
 @property (strong, nonatomic) IBOutlet UILabel *name;
 
-@property (strong, nonatomic) IBOutlet UILabel *description;
+//@property (strong, nonatomic) IBOutlet UILabel *description;
 
-@property (strong, nonatomic) IBOutlet UIImageView *imagem;
+//@property (strong, nonatomic) IBOutlet UIImageView *imagem;
 
 @end

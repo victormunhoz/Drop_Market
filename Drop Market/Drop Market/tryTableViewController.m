@@ -7,7 +7,7 @@
 //
 
 #import "tryTableViewController.h"
-#import "tryCell.h"
+
 
 
 @interface tryTableViewController ()
@@ -17,11 +17,14 @@
 
 @implementation tryTableViewController
 
+@synthesize delegate;
+
 - (id)initWithStyle:(UITableViewStyle)style
 {
     self = [super initWithStyle:style];
     if (self) {
         // Custom initialization
+        [self setDelegate:<#(id)#>]
     }
     return self;
 }
@@ -35,8 +38,13 @@
     
     _bar.delegate = self;
     
-    
 
+}
+
+-(void)viewWillDisappear:(BOOL)animated{
+    
+    [[self delegate]returnProductsDictionary:[_walmart itemSelected]];
+    
 }
 
 - (void)didReceiveMemoryWarning
@@ -56,10 +64,7 @@
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
 
-    if(self.tableView == tableView){
-        return 0;
-    }
-    
+    NSLog(@"AQUI MANO------ %lu", (unsigned long)self.walmart.itemGeral.count);
     return self.walmart.itemGeral.count;
     
 }
@@ -68,22 +73,28 @@
 {
     static NSString *CellIdentifier = @"CustomTableCell";
     
-    tryCell *cell = (tryCell *)[self.tableView dequeueReusableCellWithIdentifier:CellIdentifier];
+    UITableViewCell *cell = (UITableViewCell *)[self.tableView dequeueReusableCellWithIdentifier:CellIdentifier];
     
     if (cell == nil) {
-        cell =[[tryCell alloc]initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier];
+        cell =[[UITableViewCell alloc]initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier];
     }
 
-    NSMutableDictionary *d = [self.walmart.itemGeral objectAtIndex:indexPath.row];
-    NSDictionary *item = [d objectForKey:@"items"];
+    NSMutableDictionary *F = [self.walmart.itemGeral objectAtIndex:indexPath.row];
+    NSString *item = [F objectForKey:@"name"];
+    NSString *imageUrl = [F objectForKey:@"thumbnailImage"];
+    NSString *price = [F objectForKey:@"salePrice"];
+
     
-    NSData *data = [[NSData alloc]initWithContentsOfURL:[NSURL URLWithString:[[item objectForKey:@"thumbnailImage"] objectForKey:@"url"]]];
+    NSData *data = [[NSData alloc]initWithContentsOfURL:[NSURL URLWithString:imageUrl]];;
     
-    cell.imagem.image = [UIImage imageWithData:data];
+    cell.imageView.image = [UIImage imageWithData:data];
+
+    cell.textLabel.text = item;
     
-    cell.name.text = [item objectForKey:@"name"];
+    cell.detailTextLabel.text = price;
     
-    cell.description.text =[NSString stringWithFormat:@"R$ %@", [item objectForKey:@"price"]];
+//    
+//    cell.description.text =[NSString stringWithFormat:@"R$ %@", [item objectForKey:@"price"]];
     
     return cell;
 }
@@ -105,9 +116,16 @@
     return NO;
 }
 
+-(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
+    
+    NSInteger row = [indexPath row];
+    self.walmart.itemSelected = [self.walmart.itemGeral objectAtIndex:row];
+    NSLog(@"TESTE POURRA: %@",[[_walmart itemSelected]objectForKey:@"name"]);
+}
+
 -(void) terminouDebaixarAsParadsDoWalmart{
     NSLog(@"reload");
-    [self.searchDisplayController.searchResultsTableView performSelectorOnMainThread:@selector(reloadData) withObject:nil waitUntilDone:NO];
+    [self.tableView performSelectorOnMainThread:@selector(reloadData) withObject:nil waitUntilDone:NO];
 }
 
 - (void) touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event
@@ -117,7 +135,8 @@
 
 -(void)buscaBackground:(NSDictionary *)dict{
     
-    tryTableViewController *vc = [dict objectForKey:@"delegate"];
+  
+    //tryTableViewController *vc = [dict objectForKey:@"delegate"];
     NSString *busca = [dict objectForKey:@"string"];
     
     tryWalmart *W = [[tryWalmart alloc]init];
@@ -126,8 +145,7 @@
     [W returnData:@"name"];
     [W returnData:@"price"];
     [W returnData:@"Image"];
-    [vc terminouDebaixarAsParadsDoWalmart];
-    
+    [self terminouDebaixarAsParadsDoWalmart];
 }
 
 /*

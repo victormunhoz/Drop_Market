@@ -69,6 +69,9 @@
 }
 
 -(NSData *)walmartJson:(NSString *)busca{
+    
+    busca = [busca stringByReplacingOccurrencesOfString:@" "
+                                             withString:@"_"];
    
     self.walmartURl = [NSMutableString stringWithFormat:@"http://walmartlabs.api.mashery.com/v1/search?query=%@&format=json&apiKey=cnwrz6w9sqxgkjr7qsfk2vgv", busca];
     
@@ -93,34 +96,35 @@
     
     self.itemGeral = [self.jsonSerialized objectForKey:@"items"];
     
-    NSLog(@"%@", self.itemGeral);
+    //NSLog(@"%@", self.itemGeral);
     
     for (id d in self.itemGeral) {
-        
+        for (id d in self.itemGeral) {
       //  self.itemSelected = [d objectForKey:@"items"];
         
-        NSLog(@"%@", [d objectForKey:@"name"]);
-        NSLog(@"%@", [d objectForKey:@"salePrice"]);
+        //NSLog(@"%@", [d objectForKey:@"name"]);
+        //NSLog(@"%@", [d objectForKey:@"salePrice"]);
         
-        /*
+        
         if ([caracteristics isEqual:@"name"]) {
-            self.produtoNome = [self.itemSelected objectForKey:@"name"];
+            self.produtoNome = [d objectForKey:@"name"];
             NSLog(@"%@", self.produtoNome);
             return self.produtoNome;
         }
         
         if ([caracteristics isEqual:@"price"]) {
-            self.price = [self.itemSelected objectForKey:@"price"];
+            self.price = [d objectForKey:@"salePrice"];
             NSLog(@"%@", self.price);
             return self.price;
         }
         
         if([caracteristics isEqual:@"Image"]){
-            self.imagemMiniatura = [self.itemSelected objectForKey:@"thumbnailImage"];
+            self.imagemMiniatura = [d objectForKey:@"thumbnailImage"];
             NSLog(@"%@", self.imagemMiniatura);
             return self.imagemMiniatura;
         }
-        */
+    }
+    
     }
     return @"nada";
     

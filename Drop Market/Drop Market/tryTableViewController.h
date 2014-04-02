@@ -8,13 +8,24 @@
 
 #import <UIKit/UIKit.h>
 #import "tryWalmart.h"
+#import "tryCell.h"
+
+@class tryTableViewController;
+@protocol tryTableViewControllerDelegate <NSObject>
+
+@required
+-(void)returnProductsDictionary:(NSDictionary*)productsDictionary;
+
+@end
 
 @interface tryTableViewController : UITableViewController <UISearchBarDelegate, UISearchDisplayDelegate>
 {
     NSThread *background;
+    id<tryTableViewControllerDelegate>delegate;
 }
 -(void)buscaBackground: (NSDictionary *)dict;
 
 @property tryWalmart *walmart;
+@property(retain)id delegate;
 
 @end

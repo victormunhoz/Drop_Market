@@ -138,9 +138,9 @@
 				D4DB2AFE18E36938002D27A5 /* tryAppDelegate.h */,
 				D4DB2AFF18E36938002D27A5 /* tryAppDelegate.m */,
 				D4DB2B0118E36938002D27A5 /* Main_iPhone.storyboard */,
+				D4DB2B0418E36938002D27A5 /* Main_iPad.storyboard */,
 				D4DB2B3018E36D5C002D27A5 /* tryCell.h */,
 				D4DB2B3118E36D5C002D27A5 /* tryCell.m */,
-				D4DB2B0418E36938002D27A5 /* Main_iPad.storyboard */,
 				D4DB2B0718E36938002D27A5 /* tryViewController.h */,
 				D4DB2B0818E36938002D27A5 /* tryViewController.m */,
 				D4DB2B2A18E36BF5002D27A5 /* tryTableViewController.h */,
@@ -225,7 +225,7 @@
 			isa = PBXProject;
 			attributes = {
 				CLASSPREFIX = try;
-				LastUpgradeCheck = 0500;
+				LastUpgradeCheck = 0510;
 				ORGANIZATIONNAME = "LUCAS TEIXEIRA DE OLIVEIRA";
 				TargetAttributes = {
 					D4DB2B0F18E36938002D27A5 = {
@@ -348,7 +348,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
@@ -388,7 +387,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
@@ -447,7 +445,6 @@
 		D4DB2B2518E36938002D27A5 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
 				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Drop Market.app/Drop Market";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
@@ -470,7 +467,6 @@
 		D4DB2B2618E36938002D27A5 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
 				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Drop Market.app/Drop Market";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
