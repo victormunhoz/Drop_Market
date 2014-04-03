@@ -82,7 +82,9 @@
                             <outlet property="delegate" destination="77t-un-bCF" id="AB2-Ac-QQ3"/>
                         </connections>
                     </tableView>
+                    <toolbarItems/>
                     <navigationItem key="navigationItem" id="YF8-35-NoB"/>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
                         <outlet property="bar" destination="yhv-gP-7XH" id="fTl-fk-Ys2"/>
                     </connections>
