@@ -14,7 +14,7 @@
 @protocol tryTableViewControllerDelegate <NSObject>
 
 @required
--(void)returnProductsDictionary:(NSDictionary*)productsDictionary;
+-(void)returnProductsDictionary:(NSMutableDictionary*)productsDictionary;
 
 @end
 
@@ -24,6 +24,7 @@
     id<tryTableViewControllerDelegate>delegate;
 }
 -(void)buscaBackground: (NSDictionary *)dict;
+
 
 @property tryWalmart *walmart;
 @property(retain)id delegate;

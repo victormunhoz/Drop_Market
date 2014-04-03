@@ -11,6 +11,6 @@
 
 @interface tryViewController : UIViewController<tryTableViewControllerDelegate>
 
-@property NSDictionary *mainProductsDictionary;
+@property NSMutableDictionary *mainProductsDictionary;
 
 @end

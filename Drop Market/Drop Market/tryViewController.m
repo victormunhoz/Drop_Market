@@ -36,10 +36,18 @@
     // Dispose of any resources that can be recreated.
 }
 
--(void)returnProductsDictionary:(NSDictionary *)productsDictionary{
+-(void)returnProductsDictionary:(NSMutableDictionary *)productsDictionary{
     
-    _mainProductsDictionary = [productsDictionary objectForKey:@"name"];
-  
+    _mainProductsDictionary = productsDictionary;
+    
+
+}
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+{
+    if ([segue.identifier isEqualToString:@"tableView"]) {
+        tryTableViewController *tbvc = segue.destinationViewController;
+        [tbvc setDelegate:self];
+    }
 }
 
 @end

@@ -24,7 +24,7 @@
     self = [super initWithStyle:style];
     if (self) {
         // Custom initialization
-        [self setDelegate:<#(id)#>]
+        
     }
     return self;
 }
@@ -147,6 +147,9 @@
     [W returnData:@"Image"];
     [self terminouDebaixarAsParadsDoWalmart];
 }
+
+
+
 
 /*
 // Override to support conditional editing of the table view.
