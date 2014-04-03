@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		ADA263B218EDB68800B871C5 /* FoodCard.m in Sources */ = {isa = PBXBuildFile; fileRef = ADA263B118EDB68800B871C5 /* FoodCard.m */; };
 		D442F99718E5EE4F007638CB /* tryWalmart.m in Sources */ = {isa = PBXBuildFile; fileRef = D442F99618E5EE4F007638CB /* tryWalmart.m */; };
 		D4DB2AF018E36938002D27A5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D4DB2AEF18E36938002D27A5 /* Foundation.framework */; };
 		D4DB2AF218E36938002D27A5 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D4DB2AF118E36938002D27A5 /* CoreGraphics.framework */; };
@@ -40,6 +41,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		ADA263B018EDB68800B871C5 /* FoodCard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FoodCard.h; sourceTree = "<group>"; };
+		ADA263B118EDB68800B871C5 /* FoodCard.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FoodCard.m; sourceTree = "<group>"; };
 		D442F99518E5EE4F007638CB /* tryWalmart.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = tryWalmart.h; sourceTree = "<group>"; };
 		D442F99618E5EE4F007638CB /* tryWalmart.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = tryWalmart.m; sourceTree = "<group>"; };
 		D4DB2AEC18E36938002D27A5 /* Drop Market.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Drop Market.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -143,6 +146,8 @@
 				D4DB2B3118E36D5C002D27A5 /* tryCell.m */,
 				D4DB2B0718E36938002D27A5 /* tryViewController.h */,
 				D4DB2B0818E36938002D27A5 /* tryViewController.m */,
+				ADA263B018EDB68800B871C5 /* FoodCard.h */,
+				ADA263B118EDB68800B871C5 /* FoodCard.m */,
 				D4DB2B2A18E36BF5002D27A5 /* tryTableViewController.h */,
 				D4DB2B2B18E36BF5002D27A5 /* tryTableViewController.m */,
 				D4DB2B0A18E36938002D27A5 /* Images.xcassets */,
@@ -280,6 +285,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D4DB2B0018E36938002D27A5 /* tryAppDelegate.m in Sources */,
+				ADA263B218EDB68800B871C5 /* FoodCard.m in Sources */,
 				D4DB2B2C18E36BF5002D27A5 /* tryTableViewController.m in Sources */,
 				D4DB2B2F18E36CA6002D27A5 /* Buscape.m in Sources */,
 				D4DB2AFC18E36938002D27A5 /* main.m in Sources */,

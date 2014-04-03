@@ -41,6 +41,10 @@
 
 }
 
+-(void)viewDidAppear:(BOOL)animated{
+    self.walmart.itemSelected =nil;
+}
+
 -(void)viewWillDisappear:(BOOL)animated{
     
     [[self delegate]returnProductsDictionary:[_walmart itemSelected]];
