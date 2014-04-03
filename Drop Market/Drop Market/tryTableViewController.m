@@ -125,6 +125,7 @@
     NSInteger row = [indexPath row];
     self.walmart.itemSelected = [self.walmart.itemGeral objectAtIndex:row];
     NSLog(@"TESTE POURRA: %@",[[_walmart itemSelected]objectForKey:@"name"]);
+    
 }
 
 -(void) terminouDebaixarAsParadsDoWalmart{

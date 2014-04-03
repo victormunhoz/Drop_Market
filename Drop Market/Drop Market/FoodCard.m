@@ -16,13 +16,15 @@
     if (self) {
         // Initialization code
         _nameLabel = [[UILabel alloc]init];
-        [[self nameLabel]setFrame:CGRectMake(80, 20, 150, 50)];
+        [[self nameLabel]setFrame:CGRectMake(80, 10, 150, 50)];
         [[self nameLabel]setTextColor:[UIColor whiteColor]];
+        [[self nameLabel]setFont:[UIFont fontWithName:@"Helvetica" size:10]];
         [self addSubview:_nameLabel];
         
         _priceLabel = [[UILabel alloc]init];
-        [[self priceLabel]setFrame:CGRectMake(300, 20, 100, 50)];
+        [[self priceLabel]setFrame:CGRectMake(250, 10, 100, 50)];
         [[self priceLabel]setTextColor:[UIColor whiteColor]];
+        [[self priceLabel]setFont:[UIFont fontWithName:@"Helvetica" size:10]];
         [self addSubview:_priceLabel];
         
         _productImage = [[UIImageView alloc]init];
@@ -30,8 +32,9 @@
         [self addSubview:_productImage];
         
         self.backgroundColor = [UIColor blueColor];
-               
-
+        
+        
+        
         
     }
     return self;

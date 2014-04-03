@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		ADA263B218EDB68800B871C5 /* FoodCard.m in Sources */ = {isa = PBXBuildFile; fileRef = ADA263B118EDB68800B871C5 /* FoodCard.m */; };
+		ADA263B518EDED1600B871C5 /* Main_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ADA263B318EDED1600B871C5 /* Main_iPhone.storyboard */; };
+		ADA263BA18EDEDD500B871C5 /* CircleCustomGesture.m in Sources */ = {isa = PBXBuildFile; fileRef = ADA263B718EDEDD500B871C5 /* CircleCustomGesture.m */; };
+		ADA263BB18EDEDD500B871C5 /* Diagonal.m in Sources */ = {isa = PBXBuildFile; fileRef = ADA263B918EDEDD500B871C5 /* Diagonal.m */; };
 		D442F99718E5EE4F007638CB /* tryWalmart.m in Sources */ = {isa = PBXBuildFile; fileRef = D442F99618E5EE4F007638CB /* tryWalmart.m */; };
 		D4DB2AF018E36938002D27A5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D4DB2AEF18E36938002D27A5 /* Foundation.framework */; };
 		D4DB2AF218E36938002D27A5 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D4DB2AF118E36938002D27A5 /* CoreGraphics.framework */; };
@@ -15,7 +18,6 @@
 		D4DB2AFA18E36938002D27A5 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = D4DB2AF818E36938002D27A5 /* InfoPlist.strings */; };
 		D4DB2AFC18E36938002D27A5 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D4DB2AFB18E36938002D27A5 /* main.m */; };
 		D4DB2B0018E36938002D27A5 /* tryAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D4DB2AFF18E36938002D27A5 /* tryAppDelegate.m */; };
-		D4DB2B0318E36938002D27A5 /* Main_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D4DB2B0118E36938002D27A5 /* Main_iPhone.storyboard */; };
 		D4DB2B0618E36938002D27A5 /* Main_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D4DB2B0418E36938002D27A5 /* Main_iPad.storyboard */; };
 		D4DB2B0918E36938002D27A5 /* tryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D4DB2B0818E36938002D27A5 /* tryViewController.m */; };
 		D4DB2B0B18E36938002D27A5 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D4DB2B0A18E36938002D27A5 /* Images.xcassets */; };
@@ -25,7 +27,6 @@
 		D4DB2B1C18E36938002D27A5 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = D4DB2B1A18E36938002D27A5 /* InfoPlist.strings */; };
 		D4DB2B1E18E36938002D27A5 /* Drop_MarketTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D4DB2B1D18E36938002D27A5 /* Drop_MarketTests.m */; };
 		D4DB2B2C18E36BF5002D27A5 /* tryTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D4DB2B2B18E36BF5002D27A5 /* tryTableViewController.m */; };
-		D4DB2B2F18E36CA6002D27A5 /* Buscape.m in Sources */ = {isa = PBXBuildFile; fileRef = D4DB2B2E18E36CA6002D27A5 /* Buscape.m */; };
 		D4DB2B3218E36D5C002D27A5 /* tryCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D4DB2B3118E36D5C002D27A5 /* tryCell.m */; };
 		D4DB2B3518E370B9002D27A5 /* tryObject.m in Sources */ = {isa = PBXBuildFile; fileRef = D4DB2B3418E370B9002D27A5 /* tryObject.m */; };
 /* End PBXBuildFile section */
@@ -43,6 +44,11 @@
 /* Begin PBXFileReference section */
 		ADA263B018EDB68800B871C5 /* FoodCard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FoodCard.h; sourceTree = "<group>"; };
 		ADA263B118EDB68800B871C5 /* FoodCard.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FoodCard.m; sourceTree = "<group>"; };
+		ADA263B418EDED1600B871C5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPhone.storyboard; sourceTree = "<group>"; };
+		ADA263B618EDEDD500B871C5 /* CircleCustomGesture.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CircleCustomGesture.h; sourceTree = "<group>"; };
+		ADA263B718EDEDD500B871C5 /* CircleCustomGesture.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CircleCustomGesture.m; sourceTree = "<group>"; };
+		ADA263B818EDEDD500B871C5 /* Diagonal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Diagonal.h; sourceTree = "<group>"; };
+		ADA263B918EDEDD500B871C5 /* Diagonal.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Diagonal.m; sourceTree = "<group>"; };
 		D442F99518E5EE4F007638CB /* tryWalmart.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = tryWalmart.h; sourceTree = "<group>"; };
 		D442F99618E5EE4F007638CB /* tryWalmart.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = tryWalmart.m; sourceTree = "<group>"; };
 		D4DB2AEC18E36938002D27A5 /* Drop Market.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Drop Market.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -55,7 +61,6 @@
 		D4DB2AFD18E36938002D27A5 /* Drop Market-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Drop Market-Prefix.pch"; sourceTree = "<group>"; };
 		D4DB2AFE18E36938002D27A5 /* tryAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = tryAppDelegate.h; sourceTree = "<group>"; };
 		D4DB2AFF18E36938002D27A5 /* tryAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = tryAppDelegate.m; sourceTree = "<group>"; };
-		D4DB2B0218E36938002D27A5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPhone.storyboard; sourceTree = "<group>"; };
 		D4DB2B0518E36938002D27A5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPad.storyboard; sourceTree = "<group>"; };
 		D4DB2B0718E36938002D27A5 /* tryViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = tryViewController.h; sourceTree = "<group>"; };
 		D4DB2B0818E36938002D27A5 /* tryViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = tryViewController.m; sourceTree = "<group>"; };
@@ -67,8 +72,6 @@
 		D4DB2B1D18E36938002D27A5 /* Drop_MarketTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Drop_MarketTests.m; sourceTree = "<group>"; };
 		D4DB2B2A18E36BF5002D27A5 /* tryTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = tryTableViewController.h; sourceTree = "<group>"; };
 		D4DB2B2B18E36BF5002D27A5 /* tryTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = tryTableViewController.m; sourceTree = "<group>"; };
-		D4DB2B2D18E36CA6002D27A5 /* Buscape.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Buscape.h; sourceTree = "<group>"; };
-		D4DB2B2E18E36CA6002D27A5 /* Buscape.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Buscape.m; sourceTree = "<group>"; };
 		D4DB2B3018E36D5C002D27A5 /* tryCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = tryCell.h; sourceTree = "<group>"; };
 		D4DB2B3118E36D5C002D27A5 /* tryCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = tryCell.m; sourceTree = "<group>"; };
 		D4DB2B3318E370B9002D27A5 /* tryObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = tryObject.h; sourceTree = "<group>"; };
@@ -136,16 +139,18 @@
 				D4DB2B3418E370B9002D27A5 /* tryObject.m */,
 				D442F99518E5EE4F007638CB /* tryWalmart.h */,
 				D442F99618E5EE4F007638CB /* tryWalmart.m */,
-				D4DB2B2D18E36CA6002D27A5 /* Buscape.h */,
-				D4DB2B2E18E36CA6002D27A5 /* Buscape.m */,
 				D4DB2AFE18E36938002D27A5 /* tryAppDelegate.h */,
 				D4DB2AFF18E36938002D27A5 /* tryAppDelegate.m */,
-				D4DB2B0118E36938002D27A5 /* Main_iPhone.storyboard */,
 				D4DB2B0418E36938002D27A5 /* Main_iPad.storyboard */,
+				ADA263B318EDED1600B871C5 /* Main_iPhone.storyboard */,
 				D4DB2B3018E36D5C002D27A5 /* tryCell.h */,
 				D4DB2B3118E36D5C002D27A5 /* tryCell.m */,
 				D4DB2B0718E36938002D27A5 /* tryViewController.h */,
 				D4DB2B0818E36938002D27A5 /* tryViewController.m */,
+				ADA263B618EDEDD500B871C5 /* CircleCustomGesture.h */,
+				ADA263B718EDEDD500B871C5 /* CircleCustomGesture.m */,
+				ADA263B818EDEDD500B871C5 /* Diagonal.h */,
+				ADA263B918EDEDD500B871C5 /* Diagonal.m */,
 				ADA263B018EDB68800B871C5 /* FoodCard.h */,
 				ADA263B118EDB68800B871C5 /* FoodCard.m */,
 				D4DB2B2A18E36BF5002D27A5 /* tryTableViewController.h */,
@@ -262,9 +267,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ADA263B518EDED1600B871C5 /* Main_iPhone.storyboard in Resources */,
 				D4DB2B0618E36938002D27A5 /* Main_iPad.storyboard in Resources */,
 				D4DB2B0B18E36938002D27A5 /* Images.xcassets in Resources */,
-				D4DB2B0318E36938002D27A5 /* Main_iPhone.storyboard in Resources */,
 				D4DB2AFA18E36938002D27A5 /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -287,11 +292,12 @@
 				D4DB2B0018E36938002D27A5 /* tryAppDelegate.m in Sources */,
 				ADA263B218EDB68800B871C5 /* FoodCard.m in Sources */,
 				D4DB2B2C18E36BF5002D27A5 /* tryTableViewController.m in Sources */,
-				D4DB2B2F18E36CA6002D27A5 /* Buscape.m in Sources */,
+				ADA263BA18EDEDD500B871C5 /* CircleCustomGesture.m in Sources */,
 				D4DB2AFC18E36938002D27A5 /* main.m in Sources */,
 				D4DB2B3518E370B9002D27A5 /* tryObject.m in Sources */,
 				D4DB2B0918E36938002D27A5 /* tryViewController.m in Sources */,
 				D442F99718E5EE4F007638CB /* tryWalmart.m in Sources */,
+				ADA263BB18EDEDD500B871C5 /* Diagonal.m in Sources */,
 				D4DB2B3218E36D5C002D27A5 /* tryCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -315,20 +321,20 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
+		ADA263B318EDED1600B871C5 /* Main_iPhone.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				ADA263B418EDED1600B871C5 /* Base */,
+			);
+			name = Main_iPhone.storyboard;
+			sourceTree = "<group>";
+		};
 		D4DB2AF818E36938002D27A5 /* InfoPlist.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
 				D4DB2AF918E36938002D27A5 /* en */,
 			);
 			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
-		D4DB2B0118E36938002D27A5 /* Main_iPhone.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				D4DB2B0218E36938002D27A5 /* Base */,
-			);
-			name = Main_iPhone.storyboard;
 			sourceTree = "<group>";
 		};
 		D4DB2B0418E36938002D27A5 /* Main_iPad.storyboard */ = {

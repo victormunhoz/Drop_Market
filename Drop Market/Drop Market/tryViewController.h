@@ -9,14 +9,20 @@
 #import <UIKit/UIKit.h>
 #import "tryTableViewController.h"
 #import "FoodCard.h"
+#import "Diagonal.h"
+#import "CircleCustomGesture.h"
 
-@interface tryViewController : UIViewController<tryTableViewControllerDelegate>
+@interface tryViewController : UIViewController<tryTableViewControllerDelegate, UIDynamicItem>
 
 @property NSMutableDictionary *mainProductsDictionary;
 @property(nonatomic,strong) UIDynamicAnimator *animator;
 @property(nonatomic,strong)UIGravityBehavior *gravity;
 @property(nonatomic, strong)UICollisionBehavior *collision;
 
-@property int py;
+@property NSMutableArray *foodCardItems;
+
+- (IBAction)removeFoosViews:(id)sender;
+
+-(void)deleteView:(id*)sender;
 
 @end
