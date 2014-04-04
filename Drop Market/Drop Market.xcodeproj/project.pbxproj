@@ -28,7 +28,8 @@
 		D4DB2B1E18E36938002D27A5 /* Drop_MarketTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D4DB2B1D18E36938002D27A5 /* Drop_MarketTests.m */; };
 		D4DB2B2C18E36BF5002D27A5 /* tryTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D4DB2B2B18E36BF5002D27A5 /* tryTableViewController.m */; };
 		D4DB2B3218E36D5C002D27A5 /* tryCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D4DB2B3118E36D5C002D27A5 /* tryCell.m */; };
-		D4DB2B3518E370B9002D27A5 /* tryObject.m in Sources */ = {isa = PBXBuildFile; fileRef = D4DB2B3418E370B9002D27A5 /* tryObject.m */; };
+		F8A8FB5A18EE5DEF002193E2 /* tryTotalViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F8A8FB5918EE5DEF002193E2 /* tryTotalViewController.m */; };
+		F8A8FB5D18EE5F81002193E2 /* Frete.m in Sources */ = {isa = PBXBuildFile; fileRef = F8A8FB5C18EE5F81002193E2 /* Frete.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -74,8 +75,10 @@
 		D4DB2B2B18E36BF5002D27A5 /* tryTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = tryTableViewController.m; sourceTree = "<group>"; };
 		D4DB2B3018E36D5C002D27A5 /* tryCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = tryCell.h; sourceTree = "<group>"; };
 		D4DB2B3118E36D5C002D27A5 /* tryCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = tryCell.m; sourceTree = "<group>"; };
-		D4DB2B3318E370B9002D27A5 /* tryObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = tryObject.h; sourceTree = "<group>"; };
-		D4DB2B3418E370B9002D27A5 /* tryObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = tryObject.m; sourceTree = "<group>"; };
+		F8A8FB5818EE5DEF002193E2 /* tryTotalViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = tryTotalViewController.h; sourceTree = "<group>"; };
+		F8A8FB5918EE5DEF002193E2 /* tryTotalViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = tryTotalViewController.m; sourceTree = "<group>"; };
+		F8A8FB5B18EE5F81002193E2 /* Frete.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Frete.h; sourceTree = "<group>"; };
+		F8A8FB5C18EE5F81002193E2 /* Frete.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Frete.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -135,8 +138,8 @@
 		D4DB2AF518E36938002D27A5 /* Drop Market */ = {
 			isa = PBXGroup;
 			children = (
-				D4DB2B3318E370B9002D27A5 /* tryObject.h */,
-				D4DB2B3418E370B9002D27A5 /* tryObject.m */,
+				F8A8FB5B18EE5F81002193E2 /* Frete.h */,
+				F8A8FB5C18EE5F81002193E2 /* Frete.m */,
 				D442F99518E5EE4F007638CB /* tryWalmart.h */,
 				D442F99618E5EE4F007638CB /* tryWalmart.m */,
 				D4DB2AFE18E36938002D27A5 /* tryAppDelegate.h */,
@@ -147,6 +150,8 @@
 				D4DB2B3118E36D5C002D27A5 /* tryCell.m */,
 				D4DB2B0718E36938002D27A5 /* tryViewController.h */,
 				D4DB2B0818E36938002D27A5 /* tryViewController.m */,
+				F8A8FB5818EE5DEF002193E2 /* tryTotalViewController.h */,
+				F8A8FB5918EE5DEF002193E2 /* tryTotalViewController.m */,
 				ADA263B618EDEDD500B871C5 /* CircleCustomGesture.h */,
 				ADA263B718EDEDD500B871C5 /* CircleCustomGesture.m */,
 				ADA263B818EDEDD500B871C5 /* Diagonal.h */,
@@ -289,12 +294,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F8A8FB5D18EE5F81002193E2 /* Frete.m in Sources */,
 				D4DB2B0018E36938002D27A5 /* tryAppDelegate.m in Sources */,
 				ADA263B218EDB68800B871C5 /* FoodCard.m in Sources */,
 				D4DB2B2C18E36BF5002D27A5 /* tryTableViewController.m in Sources */,
 				ADA263BA18EDEDD500B871C5 /* CircleCustomGesture.m in Sources */,
 				D4DB2AFC18E36938002D27A5 /* main.m in Sources */,
-				D4DB2B3518E370B9002D27A5 /* tryObject.m in Sources */,
+				F8A8FB5A18EE5DEF002193E2 /* tryTotalViewController.m in Sources */,
 				D4DB2B0918E36938002D27A5 /* tryViewController.m in Sources */,
 				D442F99718E5EE4F007638CB /* tryWalmart.m in Sources */,
 				ADA263BB18EDEDD500B871C5 /* Diagonal.m in Sources */,

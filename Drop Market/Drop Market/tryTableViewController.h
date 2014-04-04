@@ -10,7 +10,6 @@
 #import "tryWalmart.h"
 #import "tryCell.h"
 
-
 @class tryTableViewController;
 @protocol tryTableViewControllerDelegate <NSObject>
 
@@ -29,7 +28,5 @@
 
 @property tryWalmart *walmart;
 @property(retain)id delegate;
-
-
 
 @end

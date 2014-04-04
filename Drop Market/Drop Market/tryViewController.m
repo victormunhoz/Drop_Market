@@ -7,8 +7,11 @@
 //
 
 #import "tryViewController.h"
+#import "tryTotalViewController.h"
 
 @interface tryViewController ()
+
+@property UIView *secondSon;
 
 @end
 
@@ -18,7 +21,6 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
     _animator = [[UIDynamicAnimator alloc]initWithReferenceView:self.view];
     _gravity = [[UIGravityBehavior alloc]init];
     _collision = [[UICollisionBehavior alloc]init];
@@ -26,6 +28,7 @@
     
     Diagonal *diagonalGesture = [[Diagonal alloc]initWithTarget:self action:@selector(deleteView:)];
     [[self view]addGestureRecognizer:diagonalGesture];
+    [self.view addGestureRecognizer:[[CircleCustomGesture alloc]initWithTarget:self action:@selector(goToSeconVC)]];
 }
 
 -(void)viewDidAppear:(BOOL)animated{
@@ -40,7 +43,6 @@
         NSData *data = [[NSData alloc]initWithContentsOfURL:[NSURL URLWithString:imageUrl]];;
         [[foodCard productImage]setImage:[UIImage imageWithData:data]];
         
-        
         [[self view]addSubview:foodCard];
         [[self gravity]addItem:foodCard];
         [[self collision]addItem:foodCard];
@@ -49,7 +51,7 @@
         [[self collision]setTranslatesReferenceBoundsIntoBoundary:YES];
         
         [[self foodCardItems]addObject:foodCard];
-        
+        [self totalPriceMethod];
         
     }
     else{
@@ -65,6 +67,7 @@
     
     [_mainProductsDictionary removeAllObjects];
 }
+
 
 - (void)didReceiveMemoryWarning
 {
@@ -86,6 +89,38 @@
     }
 }
 
+-(void) goToSeconVC
+{
+    [self getName];
+    _secondSon = [[UIView alloc]initWithFrame:CGRectMake(0,0,[[UIScreen mainScreen] applicationFrame].size.width,
+                                                           [[UIScreen mainScreen] applicationFrame].size.height)];
+    [_secondSon setBackgroundColor:[UIColor lightGrayColor]];
+    
+    UILabel *price = [[UILabel alloc]initWithFrame:CGRectMake(50, 350, 150, 30)];
+    
+    price.text = [NSString stringWithFormat:@"Price: %.2f", [self totalPriceMethod]];
+    
+    
+    UILabel *name = [[UILabel alloc]initWithFrame:CGRectMake(50, 30, 200, 300)];
+    name.numberOfLines = 0;
+    
+    name.text = _received;
+    
+    [_secondSon addGestureRecognizer:[[CircleCustomGesture alloc]initWithTarget:self action:@selector(goToFirstVC)]];
+    [_secondSon addSubview:price];
+    [_secondSon addSubview:name];
+    
+    [UIView transitionFromView:self.view toView:_secondSon duration:1.0 options:UIViewAnimationOptionTransitionFlipFromRight completion:nil];
+    
+    
+    
+}
+
+-(void) goToFirstVC{
+    [UIView transitionFromView:_secondSon toView:self.view duration:1.0 options:UIViewAnimationOptionTransitionFlipFromRight completion:nil];
+    
+}
+
 -(void)deleteView:(id*)sender{
     if (!_foodCardItems) {
         return;
@@ -102,11 +137,39 @@
             
         }
         [_foodCardItems removeAllObjects];
-        //[_pickedFoods removeAllObjects];
         
         
         
     }
+}
+
+-(void)getName{
+    if (!_foodCardItems) {
+        return;
+    }
+    NSMutableArray *pass = [[NSMutableArray alloc]init];
+    for (FoodCard *d in _foodCardItems) {
+        [pass addObject: d.nameLabel.text];
+    }
+    
+    _received = [[NSString alloc]init];
+    _received = [pass componentsJoinedByString:@"\n"];
+}
+
+-(double)totalPriceMethod{
+    if (!_foodCardItems) {
+        return 0;
+    }
+    else{
+        _totalPrice = 0;
+        for (FoodCard* d in _foodCardItems) {
+            double i = [d.priceLabel.text doubleValue];
+            _totalPrice += i;
+        }
+        
+        
+    }
+    return _totalPrice;
 }
 
 

@@ -43,6 +43,7 @@
 
 -(void)viewDidAppear:(BOOL)animated{
     self.walmart.itemSelected =nil;
+    
 }
 
 -(void)viewWillDisappear:(BOOL)animated{
@@ -96,18 +97,6 @@
     cell.textLabel.text = item;
     
     cell.detailTextLabel.text = price;
-    
-    [[cell textLabel]setFont:[UIFont fontWithName:@"Helvetica:" size:10]];
-    
-    UIButton *descButton = [[UIButton alloc]init];
-    [descButton setFrame:CGRectMake(270, 10, 40, 40)];
-    [descButton setBackgroundColor:[UIColor redColor]];
-    [descButton setTitle:@"desc" forState:UIControlStateNormal];
-    [[descButton titleLabel]setFont:[UIFont fontWithName:@"Helvetica" size:10]];
-    
-    [descButton addTarget:self action:@selector(descriptionModalInvocation) forControlEvents:UIControlEventTouchDown];
-    
-    [cell addSubview:descButton];
     
 //    
 //    cell.description.text =[NSString stringWithFormat:@"R$ %@", [item objectForKey:@"price"]];

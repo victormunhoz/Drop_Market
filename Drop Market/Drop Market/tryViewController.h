@@ -18,10 +18,11 @@
 @property(nonatomic,strong) UIDynamicAnimator *animator;
 @property(nonatomic,strong)UIGravityBehavior *gravity;
 @property(nonatomic, strong)UICollisionBehavior *collision;
+@property double totalPrice;
 
 @property NSMutableArray *foodCardItems;
+@property NSString *received;
 
-- (IBAction)removeFoosViews:(id)sender;
 
 -(void)deleteView:(id*)sender;
 

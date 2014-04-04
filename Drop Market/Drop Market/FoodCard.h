@@ -13,6 +13,7 @@
 @property UILabel *nameLabel;
 @property UILabel *priceLabel;
 @property UIImageView *productImage;
+@property id price;
 
 
 @end
